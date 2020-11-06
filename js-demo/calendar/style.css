@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --mood-color-1:red;
+    --mood-color-2:#727de3;
+    --mood-color-3:#b2e372;
+    --mood-color-4:#e372ca;
+    --mood-color-5:#72e3a6;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:40px 0;
+}
+
+h2{
+    margin-bottom:0;
+}
+
+h4{
+    font-weight:100;
+    margin:5px 0 20px;
+}
+
+p {
+    margin:5px 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin:0 auto;
+    padding:0 30px;
+    text-align: center;
+}
+
+/* 心情图标 */
+.moods_container {
+    display:flex;
+}
+

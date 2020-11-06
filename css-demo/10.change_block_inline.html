@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内 块 行内块标签</title>
+    <style>
+        li {
+            /* li是块标签，只有转成inline才能把多个li放到一行 */
+            display: inline;
+        }
+        li a {
+            padding:10px;
+        }
+
+        img {
+            /* img是行内标签，虽然margin:10px的方法可以改变它的margin，但是margin:auto不能让它居中 */
+            display:block;
+            margin:auto;
+        }
+        .box {
+            /* box包含的h3和p标签是块标签，所以更改div的display为inline会导致它的两个子元素不被包含；需要改成inline-block */
+            width:33%;
+            display: inline-block;
+            background: #888;
+            padding:20px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">联系</a></li>
+    </ul>
+    <br>
+    <br>
+    <img src="C:\\Users\\xingh3223\\Desktop\\a.jpg" alt="my_image">
+    <div class="box">
+        <h3>Heading1</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nisi voluptates perspiciatis culpa sapiente non dolorem ullam est fugit alias, odit at ipsam debitis cum facilis sed. Totam, quasi necessitatibus?</p>
+    </div>
+    <div class="box">
+        <h3>Heading2</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nisi voluptates perspiciatis culpa sapiente non dolorem ullam est fugit alias, odit at ipsam debitis cum facilis sed. Totam, quasi necessitatibus?</p>
+    </div>
+    <div class="box">
+        <h3>Heading3</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto nisi voluptates perspiciatis culpa sapiente non dolorem ullam est fugit alias, odit at ipsam debitis cum facilis sed. Totam, quasi necessitatibus?</p>
+    </div>
+</body>
+</html>

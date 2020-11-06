@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如何居中 */
+        .container {
+            max-width: 960px;
+            margin:30px auto;
+        }
+
+        .box {
+            background:#f4f4f4;
+            border:10px solid #333;
+            padding:20px;
+            margin-bottom:15px;
+            box-sizing:border-box;
+        }
+
+        .box p {
+            /* 两端对齐 */
+            text-align: justify;
+        }
+
+        #box-2 {
+            width: 60%;
+            float: left;
+        }
+
+        #box-3 {
+            width: 30%;
+            float: right;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h3>Heading1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla veritatis, excepturi eveniet accusamus quae, molestiae magni veniam eaque vero eum. Quod architecto cupiditate itaque, atque libero aut modi voluptas?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla veritatis, excepturi eveniet accusamus quae, molestiae magni veniam eaque vero eum. Quod architecto cupiditate itaque, atque libero aut modi voluptas?</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>Heading3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla veritatis, excepturi eveniet accusamus quae, molestiae magni veniam eaque vero eum. Quod architecto cupiditate itaque, atque libero aut modi voluptas?</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h3>Heading4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nulla veritatis, excepturi eveniet accusamus quae, molestiae magni veniam eaque vero eum. Quod architecto cupiditate itaque, atque libero aut modi voluptas?</p>
+        </div>
+    </div>
+</body>
+</html>

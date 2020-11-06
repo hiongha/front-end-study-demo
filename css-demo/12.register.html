@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        body {
+            background: #344a72;
+            font-family:serif;
+            line-height: 1.8;
+        }
+        a {
+            text-decoration: none;
+        }
+        #container {
+            background: #fff;
+            max-width: 400px;
+            margin:30px auto;
+            padding:20px;
+        }
+        .form-wrap {
+            background: #fff;
+            padding:15px 25px;
+        }
+        .form-wrap h1,.form-wrap p {
+            text-align: center;
+        }
+        .form-wrap .form-group {
+            margin-top:15px;
+        }
+        .form-wrap .form-group label {
+            display: block;
+            color:#666;
+        }
+        .form-wrap .form-group input {
+            width: 100%;
+            padding:10px;
+            border: #ddd 1px solid;
+            border-radius: 5px;
+        }
+
+        .form-wrap button {
+            display: block;
+            width: 100%;
+            padding:10px;
+            margin-top:20px;
+            background:#49c1a2;
+            color:#fff;
+            cursor:pointer;
+        }
+        .form-wrap button:hover {
+            background: #37a08e;
+        }
+
+        .form-wrap bottom-text {
+            font-size:13px;
+            margin-top:20px;
+        }
+
+        footer {
+            text-align:center;
+            margin-top:10px;
+        }
+        footer a {
+            color:#49c1a2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrap">
+            <h1>注册</h1>
+            <p>注册成为网易云会员</p>
+            <form action="">
+                <div class="form-group"><label for="">姓名</label><input type="text" name="name" id="name"></div>
+                <div class="form-group"><label for="">性别</label><input type="text" name="sex" id="sex"></div>
+                <div class="form-group"><label for="">邮箱</label><input type="text" name="email" id="email"></div>
+                <div class="form-group"><label for="">密码</label><input type="text" name="password" id="password"></div>
+                <div class="form-group"><label for="">确认密码</label><input type="text" name="password_again" id="password_again"></div>
+                <button type="submit" class="btn">注册</button>
+                <p class="bottom-text">
+                    <a href="#" class="">每一个 & 信息</a>完整
+                    <a href="#" class="">我们保证不会透露你的信息</a>
+                </p>
+            </form>
+        </div>
+
+        <footer>
+            <p>已经有账户了？<a href="#" class="">这里登陆</a></p>
+        </footer>
+    </div>
+</body>
+</html>
